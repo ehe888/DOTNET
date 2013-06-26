@@ -58,11 +58,15 @@
     <property name="CacheQueries" value="true" />
   </object>
 
-  <object id="UserDao" type="WebAPISample.DAO.NHibernateDao&lt;WebAPISample.Models.User&gt;, WebAPISample">
+  <object id="UserDao" type="SpringSupport.NHibernate.NHibernateDao&lt;WebAPISample.Models.User&gt;, SpringSupport">
     <property name="HibernateTemplate" ref="HibernateTemplate"/>
   </object>
 
-  <object id="StaffDao" type="WebAPISample.DAO.NHibernateDao&lt;WebAPISample.Models.Staff&gt;, WebAPISample">
+  <object id="StaffDao" type="SpringSupport.NHibernate.NHibernateDao&lt;WebAPISample.Models.Staff&gt;, SpringSupport">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+
+  <object id="MenuDao" type="SpringSupport.NHibernate.NHibernateDao&lt;WebAPISample.Models.Menu&gt;, SpringSupport">
     <property name="HibernateTemplate" ref="HibernateTemplate"/>
   </object>
 </objects>

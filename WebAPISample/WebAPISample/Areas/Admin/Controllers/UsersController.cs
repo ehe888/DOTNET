@@ -5,10 +5,10 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using WebAPISample.Models;
-using WebAPISample.DAO;
 using Spring.Transaction.Interceptor;
 using WebAPISample.DTO;
 using AutoMapper;
+using SpringSupport.NHibernate;
 
 namespace WebAPISample.Areas.Admin.Controllers
 {

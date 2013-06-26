@@ -7,4 +7,9 @@
   <object type="WebAPISample.Areas.Operation.Controllers.StaffsController, WebAPISample" singleton="false" >
     <property name="StaffDao" ref="StaffDao" />
   </object>
+
+  <object type="WebAPISample.Areas.Admin.Controllers.MenusController, WebAPISample" singleton="false" >
+    <property name="MenuDao" ref="MenuDao" />
+  </object>
+  
 </objects>

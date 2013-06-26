@@ -5,9 +5,9 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using WebAPISample.Models;
-using WebAPISample.DAO;
 using AutoMapper;
 using WebAPISample.DTO;
+using SpringSupport.NHibernate;
 
 namespace WebAPISample.Areas.Operation.Controllers
 {
