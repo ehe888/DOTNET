@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
+using System.Text;
 using System.Web.Http.Dispatcher;
 using System.Web.Http;
 using System.Web.Http.Controllers;
 using System.Net.Http;
 
-namespace WebAPISample.Helpers
+namespace MVC4Support
 {
     public class AreaHttpControllerSelector : DefaultHttpControllerSelector
     {

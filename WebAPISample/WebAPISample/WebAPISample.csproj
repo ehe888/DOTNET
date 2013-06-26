@@ -200,7 +200,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Helpers\AreaHttpControllerSelector.cs" />
     <Compile Include="Models\Menu.cs" />
     <Compile Include="Models\Staff.cs" />
     <Compile Include="Models\User.cs" />
@@ -272,6 +271,10 @@
     <Content Include="Areas\Operation\Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\MVC4Support\MVC4Support\MVC4Support.csproj">
+      <Project>{404951BA-4AD2-4686-A316-D2A2758E0F3D}</Project>
+      <Name>MVC4Support</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\SpringSupport\SpringSupport\SpringSupport.csproj">
       <Project>{5BFC6C2B-EF65-4020-9257-D3548F40D8DE}</Project>
       <Name>SpringSupport</Name>

@@ -7,9 +7,9 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 using System.Web.Http.Dispatcher;
-using WebAPISample.Helpers;
 using Spring.Web.Mvc;
 using Newtonsoft.Json.Serialization;
+using MVC4Support;
 
 namespace WebAPISample
 {
