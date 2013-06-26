@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net">
+  <object type="WebAPISample.Areas.Admin.Controllers.UsersController, WebAPISample" singleton="false" >
+    <property name="UserDao" ref="UserDao" />
+  </object>
+
+  <object type="WebAPISample.Areas.Operation.Controllers.StaffsController, WebAPISample" singleton="false" >
+    <property name="StaffDao" ref="StaffDao" />
+  </object>
+</objects>

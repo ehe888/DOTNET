@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping assembly="WebAPISample" namespace="WebAPISample.Models" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Staff" table="staff">
+    <id name="Id" type="Int64">
+      <column name="Id" not-null="true" sql-type="INTEGER" />
+      <generator class="native" />
+    </id>
+    <property name="Name" type="String">
+      <column name="Name" not-null="true" length="50" sql-type="VARCHAR" />
+    </property>
+
+    <many-to-one name="UserAccount" class="WebAPISample.Models.User, WebAPISample">
+      <column name="UserAccount" not-null="false" sql-type="INTEGER" />
+    </many-to-one>
+    
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping assembly="WebAPISample" namespace="WebAPISample.Models" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="User" table="app_user">
+    <id name="Id" type="Int64">
+      <column name="Id" not-null="true" sql-type="INTEGER" />
+      <generator class="native" />
+    </id>
+    <property name="UserName" type="String">
+      <column name="UserName" not-null="false" length="50" sql-type="VARCHAR" />
+    </property>
+
+    <property name="Password" type="String">
+      <column name="Password" not-null="false" length="50" sql-type="VARCHAR" />
+    </property>
+    
+  </class>
+</hibernate-mapping>

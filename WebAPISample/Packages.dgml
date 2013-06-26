@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph GraphDirection="LeftToRight" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="WebAPISample" Label="WebAPISample" Category="项目" />
+    <Node Id="Common.Logging 1.2.0" Label="Common.Logging 1.2.0" Category="包" />
+    <Node Id="Iesi.Collections 3.2.0.4000" Label="Iesi.Collections 3.2.0.4000" Category="包" />
+    <Node Id="jQuery 1.7.1.1" Label="jQuery 1.7.1.1" Category="包" />
+    <Node Id="jQuery.UI.Combined 1.8.20.1" Label="jQuery.UI.Combined 1.8.20.1" Category="包" />
+    <Node Id="jQuery.Validation 1.9.0.1" Label="jQuery.Validation 1.9.0.1" Category="包" />
+    <Node Id="knockoutjs 2.2.1" Label="knockoutjs 2.2.1" Category="包" />
+    <Node Id="Microsoft.AspNet.Mvc 4.0.20710.0" Label="Microsoft.AspNet.Mvc 4.0.20710.0" Category="包" />
+    <Node Id="Microsoft.AspNet.Providers 1.2" Label="Microsoft.AspNet.Providers 1.2" Category="包" />
+    <Node Id="Microsoft.AspNet.Providers.Core 1.1" Label="Microsoft.AspNet.Providers.Core 1.1" Category="包" />
+    <Node Id="Microsoft.AspNet.Razor 2.0.20710.0" Label="Microsoft.AspNet.Razor 2.0.20710.0" Category="包" />
+    <Node Id="Microsoft.AspNet.Web.Optimization 1.0.0" Label="Microsoft.AspNet.Web.Optimization 1.0.0" Category="包" />
+    <Node Id="Microsoft.AspNet.WebApi 4.0.20710.0" Label="Microsoft.AspNet.WebApi 4.0.20710.0" Category="包" />
+    <Node Id="Microsoft.AspNet.WebApi.Client 4.0.20710.0" Label="Microsoft.AspNet.WebApi.Client 4.0.20710.0" Category="包" />
+    <Node Id="Microsoft.AspNet.WebApi.Core 4.0.20710.0" Label="Microsoft.AspNet.WebApi.Core 4.0.20710.0" Category="包" />
+    <Node Id="Microsoft.AspNet.WebApi.WebHost 4.0.20710.0" Label="Microsoft.AspNet.WebApi.WebHost 4.0.20710.0" Category="包" />
+    <Node Id="Microsoft.AspNet.WebPages 2.0.20710.0" Label="Microsoft.AspNet.WebPages 2.0.20710.0" Category="包" />
+    <Node Id="Microsoft.jQuery.Unobtrusive.Ajax 2.0.20710.0" Label="Microsoft.jQuery.Unobtrusive.Ajax 2.0.20710.0" Category="包" />
+    <Node Id="Microsoft.jQuery.Unobtrusive.Validation 2.0.20710.0" Label="Microsoft.jQuery.Unobtrusive.Validation 2.0.20710.0" Category="包" />
+    <Node Id="Microsoft.Net.Http 2.0.20710.0" Label="Microsoft.Net.Http 2.0.20710.0" Category="包" />
+    <Node Id="Microsoft.Web.Infrastructure 1.0.0.0" Label="Microsoft.Web.Infrastructure 1.0.0.0" Category="包" />
+    <Node Id="Modernizr 2.5.3" Label="Modernizr 2.5.3" Category="包" />
+    <Node Id="Newtonsoft.Json 4.5.6" Label="Newtonsoft.Json 4.5.6" Category="包" />
+    <Node Id="NHibernate 3.2.0.4000" Label="NHibernate 3.2.0.4000" Category="包" />
+    <Node Id="Spring.Aop 2.0.0-M2" Label="Spring.Aop 2.0.0-M2" Category="包" />
+    <Node Id="Spring.Core 2.0.0-M2" Label="Spring.Core 2.0.0-M2" Category="包" />
+    <Node Id="Spring.Data 2.0.0-M2" Label="Spring.Data 2.0.0-M2" Category="包" />
+    <Node Id="Spring.Data.NHibernate32 2.0.0-M2" Label="Spring.Data.NHibernate32 2.0.0-M2" Category="包" />
+    <Node Id="Spring.Web 2.0.0-M2" Label="Spring.Web 2.0.0-M2" Category="包" />
+    <Node Id="Spring.Web.Mvc4 2.0.0-M2" Label="Spring.Web.Mvc4 2.0.0-M2" Category="包" />
+    <Node Id="WebGrease 1.1.0" Label="WebGrease 1.1.0" Category="包" />
+  </Nodes>
+  <Links>
+    <Link Source="jQuery.UI.Combined 1.8.20.1" Target="jQuery 1.7.1.1" Category="程序包依赖项" />
+    <Link Source="jQuery.Validation 1.9.0.1" Target="jQuery 1.7.1.1" Category="程序包依赖项" />
+    <Link Source="Microsoft.AspNet.Mvc 4.0.20710.0" Target="Microsoft.AspNet.WebPages 2.0.20710.0" Category="程序包依赖项" />
+    <Link Source="Microsoft.AspNet.Mvc 4.0.20710.0" Target="Microsoft.AspNet.Razor 2.0.20710.0" Category="程序包依赖项" />
+    <Link Source="Microsoft.AspNet.Providers 1.2" Target="Microsoft.AspNet.Providers.Core 1.1" Category="程序包依赖项" />
+    <Link Source="Microsoft.AspNet.Web.Optimization 1.0.0" Target="Microsoft.Web.Infrastructure 1.0.0.0" Category="程序包依赖项" />
+    <Link Source="Microsoft.AspNet.Web.Optimization 1.0.0" Target="WebGrease 1.1.0" Category="程序包依赖项" />
+    <Link Source="Microsoft.AspNet.WebApi 4.0.20710.0" Target="Microsoft.AspNet.WebApi.WebHost 4.0.20710.0" Category="程序包依赖项" />
+    <Link Source="Microsoft.AspNet.WebApi.Client 4.0.20710.0" Target="Microsoft.Net.Http 2.0.20710.0" Category="程序包依赖项" />
+    <Link Source="Microsoft.AspNet.WebApi.Client 4.0.20710.0" Target="Newtonsoft.Json 4.5.6" Category="程序包依赖项" />
+    <Link Source="Microsoft.AspNet.WebApi.Core 4.0.20710.0" Target="Microsoft.AspNet.WebApi.Client 4.0.20710.0" Category="程序包依赖项" />
+    <Link Source="Microsoft.AspNet.WebApi.WebHost 4.0.20710.0" Target="Microsoft.Web.Infrastructure 1.0.0.0" Category="程序包依赖项" />
+    <Link Source="Microsoft.AspNet.WebApi.WebHost 4.0.20710.0" Target="Microsoft.AspNet.WebApi.Core 4.0.20710.0" Category="程序包依赖项" />
+    <Link Source="Microsoft.AspNet.WebPages 2.0.20710.0" Target="Microsoft.Web.Infrastructure 1.0.0.0" Category="程序包依赖项" />
+    <Link Source="Microsoft.AspNet.WebPages 2.0.20710.0" Target="Microsoft.AspNet.Razor 2.0.20710.0" Category="程序包依赖项" />
+    <Link Source="Microsoft.jQuery.Unobtrusive.Ajax 2.0.20710.0" Target="jQuery 1.7.1.1" Category="程序包依赖项" />
+    <Link Source="Microsoft.jQuery.Unobtrusive.Validation 2.0.20710.0" Target="jQuery.Validation 1.9.0.1" Category="程序包依赖项" />
+    <Link Source="NHibernate 3.2.0.4000" Target="Iesi.Collections 3.2.0.4000" Category="程序包依赖项" />
+    <Link Source="Spring.Aop 2.0.0-M2" Target="Common.Logging 1.2.0" Category="程序包依赖项" />
+    <Link Source="Spring.Aop 2.0.0-M2" Target="Spring.Core 2.0.0-M2" Category="程序包依赖项" />
+    <Link Source="Spring.Core 2.0.0-M2" Target="Common.Logging 1.2.0" Category="程序包依赖项" />
+    <Link Source="Spring.Data 2.0.0-M2" Target="Common.Logging 1.2.0" Category="程序包依赖项" />
+    <Link Source="Spring.Data 2.0.0-M2" Target="Spring.Aop 2.0.0-M2" Category="程序包依赖项" />
+    <Link Source="Spring.Data 2.0.0-M2" Target="Spring.Core 2.0.0-M2" Category="程序包依赖项" />
+    <Link Source="Spring.Data.NHibernate32 2.0.0-M2" Target="Common.Logging 1.2.0" Category="程序包依赖项" />
+    <Link Source="Spring.Data.NHibernate32 2.0.0-M2" Target="NHibernate 3.2.0.4000" Category="程序包依赖项" />
+    <Link Source="Spring.Data.NHibernate32 2.0.0-M2" Target="Spring.Aop 2.0.0-M2" Category="程序包依赖项" />
+    <Link Source="Spring.Data.NHibernate32 2.0.0-M2" Target="Spring.Core 2.0.0-M2" Category="程序包依赖项" />
+    <Link Source="Spring.Data.NHibernate32 2.0.0-M2" Target="Spring.Data 2.0.0-M2" Category="程序包依赖项" />
+    <Link Source="Spring.Web 2.0.0-M2" Target="Common.Logging 1.2.0" Category="程序包依赖项" />
+    <Link Source="Spring.Web 2.0.0-M2" Target="Spring.Core 2.0.0-M2" Category="程序包依赖项" />
+    <Link Source="Spring.Web.Mvc4 2.0.0-M2" Target="Common.Logging 1.2.0" Category="程序包依赖项" />
+    <Link Source="Spring.Web.Mvc4 2.0.0-M2" Target="Spring.Core 2.0.0-M2" Category="程序包依赖项" />
+    <Link Source="Spring.Web.Mvc4 2.0.0-M2" Target="Spring.Web 2.0.0-M2" Category="程序包依赖项" />
+    <Link Source="WebAPISample" Target="jQuery.UI.Combined 1.8.20.1" Category="安装的程序包" />
+    <Link Source="WebAPISample" Target="knockoutjs 2.2.1" Category="安装的程序包" />
+    <Link Source="WebAPISample" Target="Microsoft.AspNet.Mvc 4.0.20710.0" Category="安装的程序包" />
+    <Link Source="WebAPISample" Target="Microsoft.AspNet.Providers 1.2" Category="安装的程序包" />
+    <Link Source="WebAPISample" Target="Microsoft.AspNet.Web.Optimization 1.0.0" Category="安装的程序包" />
+    <Link Source="WebAPISample" Target="Microsoft.AspNet.WebApi 4.0.20710.0" Category="安装的程序包" />
+    <Link Source="WebAPISample" Target="Microsoft.jQuery.Unobtrusive.Ajax 2.0.20710.0" Category="安装的程序包" />
+    <Link Source="WebAPISample" Target="Microsoft.jQuery.Unobtrusive.Validation 2.0.20710.0" Category="安装的程序包" />
+    <Link Source="WebAPISample" Target="Modernizr 2.5.3" Category="安装的程序包" />
+    <Link Source="WebAPISample" Target="Spring.Data.NHibernate32 2.0.0-M2" Category="安装的程序包" />
+    <Link Source="WebAPISample" Target="Spring.Web.Mvc4 2.0.0-M2" Category="安装的程序包" />
+  </Links>
+  <Categories>
+    <Category Id="项目" />
+    <Category Id="包" />
+  </Categories>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="项目" ValueLabel="True">
+      <Condition Expression="HasCategory('项目')" />
+      <Setter Property="Background" Value="Blue" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="程序包依赖项" ValueLabel="True">
+      <Condition Expression="HasCategory('程序包依赖项')" />
+      <Setter Property="Background" Value="Yellow" />
+    </Style>
+  </Styles>
+</DirectedGraph>
