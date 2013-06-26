@@ -11,5 +11,10 @@
   <object type="WebAPISample.Areas.Admin.Controllers.MenusController, WebAPISample" singleton="false" >
     <property name="MenuDao" ref="MenuDao" />
   </object>
+
+
+  <object type="WebAPISample.Areas.Admin.Controllers.RolesController, WebAPISample" singleton="false" >
+    <property name="NHibernateContext" ref="NHibernateContext" />
+  </object>
   
 </objects>

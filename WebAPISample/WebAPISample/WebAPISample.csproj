@@ -75,6 +75,12 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\NHibernate.3.3.3.4000\lib\Net35\NHibernate.dll</HintPath>
     </Reference>
+    <Reference Include="NHibernate.Linq">
+      <HintPath>..\packages\NHibernate.Linq.1.0\lib\NHibernate.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.OData">
+      <HintPath>..\packages\NHibernate.OData.0.2.4.0\lib\net35\NHibernate.OData.dll</HintPath>
+    </Reference>
     <Reference Include="Spring.Aop">
       <HintPath>..\packages\Spring.Aop.2.0.0-M2\lib\net40\Spring.Aop.dll</HintPath>
     </Reference>
@@ -188,6 +194,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\MenusController.cs" />
+    <Compile Include="Areas\Admin\Controllers\RolesController.cs" />
     <Compile Include="Areas\Admin\Controllers\UsersController.cs" />
     <Compile Include="Areas\Operation\Controllers\StaffsController.cs" />
     <Compile Include="Areas\Operation\OperationAreaRegistration.cs" />
@@ -201,12 +208,16 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Menu.cs" />
+    <Compile Include="Models\Role.cs" />
     <Compile Include="Models\Staff.cs" />
     <Compile Include="Models\User.cs" />
+    <Compile Include="OData\NHibernateContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Config\Controller.xml" />
+    <Content Include="Config\Controller.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Config\Dao.xml">
       <SubType>Designer</SubType>
     </Content>
@@ -216,6 +227,7 @@
     <EmbeddedResource Include="Models\User.hbm.xml" />
     <EmbeddedResource Include="Models\Staff.hbm.xml" />
     <EmbeddedResource Include="Models\Menu.hbm.xml" />
+    <EmbeddedResource Include="Models\Role.hbm.xml" />
     <Content Include="Scripts\breeze.debug.js" />
     <Content Include="Scripts\breeze.intellisense.js" />
     <Content Include="Scripts\breeze.min.js" />

@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
+using System.Web.Http.OData.Builder;
+using WebAPISample.Models;
 
 namespace WebAPISample
 {
@@ -14,6 +16,9 @@ namespace WebAPISample
                 routeTemplate: "api/{area}/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
+            ODataModelBuilder modelBuilder = new ODataConventionModelBuilder();
+            modelBuilder.EntitySet<Role>("Roles");
         }
     }
 }

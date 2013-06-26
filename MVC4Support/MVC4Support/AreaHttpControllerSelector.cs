@@ -6,11 +6,17 @@ using System.Web.Http.Dispatcher;
 using System.Web.Http;
 using System.Web.Http.Controllers;
 using System.Net.Http;
+using System.Reflection;
+using Common.Logging;
+using Spring.Context;
+using Spring.Context.Support;
 
 namespace MVC4Support
 {
     public class AreaHttpControllerSelector : DefaultHttpControllerSelector
     {
+        private static ILog Logger = LogManager.GetLogger<AreaHttpControllerSelector>();
+
         private readonly HttpConfiguration _configuration;
 
         private const string ControllerSuffix = "Controller";
@@ -37,11 +43,39 @@ namespace MVC4Support
         /// <returns></returns>
         private static Dictionary<string, Type> GetControllerTypes()
         {
-            var assemblies = AppDomain.CurrentDomain.GetAssemblies();
 
-            var types = assemblies.SelectMany(a => a.GetTypes().Where(t => !t.IsAbstract && t.Name.EndsWith(ControllerSuffix) && typeof(IHttpController).IsAssignableFrom(t)))
-                .ToDictionary(t => t.FullName, t => t);
+            
 
+            //var assemblies = AppDomain.CurrentDomain.GetAssemblies();
+
+            //foreach (Assembly asm in assemblies)
+            //{
+            //    Type[] ts = asm.GetTypes();
+            //    foreach (Type t in ts)
+            //    {
+            //        Logger.Debug(" Type Full Name = " + t.FullName);
+            //    }
+            //}
+
+            //var types = assemblies.SelectMany(a => a.GetTypes().Where(t => !t.IsAbstract && t.Name.EndsWith(ControllerSuffix) && typeof(IHttpController).IsAssignableFrom(t)))
+            //    .ToDictionary(t => t.FullName, t => t);
+
+            IApplicationContext context = ContextRegistry.GetContext();
+
+            IDictionary<string, IHttpController> controllers = context.GetObjects<IHttpController>();
+
+
+            //var assemblies = AppDomain.CurrentDomain.GetAssemblies();
+
+            Dictionary<string, Type> types = new Dictionary<string, Type>();
+            if (controllers != null)
+            {
+                foreach (var bean in controllers)
+                {
+                    types.Add(bean.Value.GetType().FullName, bean.Value.GetType());
+                }
+            }
+            
             return types;
         }
 

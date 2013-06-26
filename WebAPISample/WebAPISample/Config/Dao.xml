@@ -69,4 +69,10 @@
   <object id="MenuDao" type="SpringSupport.NHibernate.NHibernateDao&lt;WebAPISample.Models.Menu&gt;, SpringSupport">
     <property name="HibernateTemplate" ref="HibernateTemplate"/>
   </object>
+
+  <object id="NHibernateContext" type="WebAPISample.OData.NHibernateContext, WebAPISample">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  
+  
 </objects>

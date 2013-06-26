@@ -19,7 +19,8 @@ namespace WebAPISample
     public class WebApiApplication : SpringMvcApplication
     {
         protected void Application_Start()
-        {
+        {   
+            
             GlobalConfiguration.Configuration.Services.Replace(typeof(IHttpControllerSelector),
                 new AreaHttpControllerSelector(GlobalConfiguration.Configuration));
 
