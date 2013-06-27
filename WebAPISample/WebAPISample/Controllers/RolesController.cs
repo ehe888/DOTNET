@@ -8,13 +8,14 @@ using WebAPISample.Models;
 using System.Web.Http.OData;
 using WebAPISample.OData;
 
-namespace WebAPISample.Areas.Admin.Controllers
+namespace WebAPISample.Controllers
 {
     public class RolesController : EntitySetController<Role, long>
     {
 
         private NHibernateContext NHibernateContext { get; set; }
 
+        [Queryable]
         public override IQueryable<Role> Get()
         {
             return NHibernateContext.Roles;

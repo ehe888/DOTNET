@@ -194,7 +194,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\MenusController.cs" />
-    <Compile Include="Areas\Admin\Controllers\RolesController.cs" />
+    <Compile Include="Controllers\RolesController.cs" />
     <Compile Include="Areas\Admin\Controllers\UsersController.cs" />
     <Compile Include="Areas\Operation\Controllers\StaffsController.cs" />
     <Compile Include="Areas\Operation\OperationAreaRegistration.cs" />

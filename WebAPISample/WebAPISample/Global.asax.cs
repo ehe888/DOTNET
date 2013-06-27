@@ -21,8 +21,8 @@ namespace WebAPISample
         protected void Application_Start()
         {   
             
-            GlobalConfiguration.Configuration.Services.Replace(typeof(IHttpControllerSelector),
-                new AreaHttpControllerSelector(GlobalConfiguration.Configuration));
+            //GlobalConfiguration.Configuration.Services.Replace(typeof(IHttpControllerSelector),
+            //    new AreaHttpControllerSelector(GlobalConfiguration.Configuration));
 
             AreaRegistration.RegisterAllAreas();
 

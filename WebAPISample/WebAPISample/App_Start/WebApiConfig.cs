@@ -11,14 +11,17 @@ namespace WebAPISample
     {
         public static void Register(HttpConfiguration config)
         {
+            ODataModelBuilder modelBuilder = new ODataConventionModelBuilder();
+            modelBuilder.EntitySet<Role>("Roles");
+
+            Microsoft.Data.Edm.IEdmModel model = modelBuilder.GetEdmModel();
+            config.Routes.MapODataRoute("ODataRoute", "odata", model);
+
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{area}/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
-
-            ODataModelBuilder modelBuilder = new ODataConventionModelBuilder();
-            modelBuilder.EntitySet<Role>("Roles");
         }
     }
 }

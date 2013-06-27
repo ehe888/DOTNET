@@ -13,7 +13,7 @@
   </object>
 
 
-  <object type="WebAPISample.Areas.Admin.Controllers.RolesController, WebAPISample" singleton="false" >
+  <object type="WebAPISample.Controllers.RolesController, WebAPISample" singleton="false" >
     <property name="NHibernateContext" ref="NHibernateContext" />
   </object>
   
