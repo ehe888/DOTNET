@@ -43,6 +43,7 @@
         <!--启动查询缓存-->
         <entry key="cache.use_query_cache" value="false"/>
         <entry key="query.substitutions" value="true 1, false 0, yes 'Y', no 'N"/>
+        <entry key="linqtohql.generatorsregistry" value="" />
         
       </dictionary>
     </property>
